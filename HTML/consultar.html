@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body class="bg-danger-subtle">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./inicio.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./cadastrar.html">Cadastrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./consultar.html">Consultar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./alterar.html">Alterar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="text-center">Consultar Livro</h1>
+    <div class="d-flex flex-row align-items-center column-gap-3">
+      <div class="pb-2">
+        <form id="formConsultarLivro">
+          <label for="escolha" class="form-label">Escolha:</label>
+          <select class="form-select form-select-sm " id="options">
+            <option value=""></option>
+            <option value="1">Autor</option>
+            <option value="2">Categoria</option>
+            <option value="3">Ano</option>
+            <option value="4">Título</option>
+            <option value="5">Editora</option>
+            <option value="6">Valor de Aquisição</option>
+            <option value="7">Edição</option>
+            <option value="8">ISBN</option>
+            <option value="9">Número de Páginas</option>
+            <option value="10">Altura</option>
+            <option value="11">Largura</option>
+            <option value="12">Peso</option>
+            <option value="13">Profundidade</option>
+            <option value="14">Sinopse</option>
+            <option value="15">Código de Barras</option>
+            <option value="16">Grupo de Precificação</option>
+            <option value="17">Código</option>
+            <option value="18">Situação</option>
+          </select>
+        </form>
+      </div>
+      <div class="pt-4">
+        <button type="submit" class="btn btn-primary pb-1 pt-0" onclick="campoEscolhido()">+</button>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Consultar</button>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
